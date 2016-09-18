@@ -1,0 +1,56 @@
+{
+  "name": "kura-client",
+  "version": "1.0.0",
+  "description": "Simple voting application - Learning Redux!",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js \"test/**/*@(.js|.jsx)\"",
+    "test:watch": "npm run test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Habu-Kagumba/kura-client"
+  },
+  "keywords": [
+    "kura",
+    "voting"
+  ],
+  "author": "Herbert Kagumba <habu@kagumba.com>",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "chai": "^3.5.0",
+    "chai-immutable": "^1.6.0",
+    "eslint-plugin-react": "^6.2.0",
+    "jsdom": "^9.4.2",
+    "mocha": "^3.0.2",
+    "react-addons-test-utils": "^15.3.1",
+    "react-hot-loader": "^3.0.0-beta.1",
+    "redux-devtools": "^3.3.1",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-devtools-log-monitor": "^1.0.11",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
+  },
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "react": "^15.3.1",
+    "react-addons-pure-render-mixin": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.7.0",
+    "redux": "^3.5.2",
+    "socket.io": "^1.4.8",
+    "socket.io-client": "^1.4.8"
+  }
+}
